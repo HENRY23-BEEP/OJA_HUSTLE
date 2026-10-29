@@ -1,0 +1,8 @@
+{
+  "appId": "com.ojahustle.game",
+  "appName": "Oja Hustle",
+  "webDir": "www",
+  "backgroundColor": "#7B3FE4",
+  "android": { "backgroundColor": "#7B3FE4" },
+  "ios": { "backgroundColor": "#7B3FE4", "contentInset": "never" }
+}

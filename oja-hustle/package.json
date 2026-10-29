@@ -1,0 +1,31 @@
+{
+  "name": "oja-hustle",
+  "version": "1.0.0",
+  "description": "Oja Hustle — an educational market business game for Android, iOS and the web.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node tools/serve.mjs",
+    "test": "node tests/simulate.mjs 30 0.8",
+    "standalone": "node tools/build-standalone.mjs",
+    "android:add": "cap add android",
+    "android:icons": "capacitor-assets generate --android --iconBackgroundColor \"#7B3FE4\" --iconBackgroundColorDark \"#7B3FE4\" --splashBackgroundColor \"#7B3FE4\" --splashBackgroundColorDark \"#7B3FE4\"",
+    "android:sync": "cap sync android",
+    "android:open": "cap open android",
+    "ios:add": "cap add ios",
+    "ios:icons": "capacitor-assets generate --ios --iconBackgroundColor \"#7B3FE4\" --splashBackgroundColor \"#7B3FE4\"",
+    "ios:sync": "cap sync ios",
+    "ios:open": "cap open ios"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/ios": "^7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^7.0.0",
+    "esbuild": "^0.24.0"
+  },
+  "engines": { "node": ">=20" }
+}
